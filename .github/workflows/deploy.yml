@@ -6,7 +6,7 @@ on:
       - v5
  
 env:
-  THEME_NAME: flexoki-dark
+  THEME_NAME: flexoki
 
 permissions:
   contents: read
