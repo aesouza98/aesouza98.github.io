@@ -10,6 +10,7 @@ topics:
   - "[[PKMS]]"
   - "[[Zettelkasten]]"
 status:
+  - "[[In Progress]]"
 ---
 
 ## 1. Intro
