@@ -1,3 +1,15 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// Remove o fundo (highlight) aplicado aos links pelo plugin quartz-themes.
+// O tema injeta: `body a.internal-link { background-color: rgb(from var(--highlight) r g b / 0.3) }`
+// e o Flexoki define `--highlight: var(--text-highlight-bg, rgba(255, 208, 0, 0.4))` -- daí o amarelo.
+// O `:root` inicial existe apenas para elevar a especificidade acima da regra do tema, sem !important.
+// Tags (.tag-link) e trechos marcados (.text-highlight) usam seletores mais específicos e não são afetados.
+:root body a.internal,
+:root body a.internal-link,
+:root body a.external,
+:root body a.external-link {
+  background-color: transparent;
+}

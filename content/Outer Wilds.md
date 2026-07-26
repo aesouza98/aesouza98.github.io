@@ -9,7 +9,7 @@ published: 2026-07-26
 tags:
   - games
 image: https://cdn2.steamgriddb.com/hero_thumb/127f36d53863c8ef53c6426e948bfdf6.jpg
-quartzProperties: true
+quartzProperties: false
 quartzPropertiesCollapse: false
 enableToc: false
 ---
@@ -17,7 +17,7 @@ enableToc: false
 
 Ao iniciar nossa jornada por Outer Wilds, nos vemos em frente a uma fogueira, com uma lata de marshmallows e um companheiro, banhados pela beleza do espaço em nossa volta, e tomados por um sentimento de ‘o que será que tem lá fora?’.
 
-Outer Wilds é um jogo incrível, com uma história relativamente complexa e um universo capaz de nos fazer querer explorar cada cantinho dele.
+Outer Wilds é um [[Jogos|jogo incrível]], com uma história relativamente complexa e um universo capaz de nos fazer querer explorar cada cantinho dele.
 
 Nesse universo temos os mais diferentes planetas, desde lugares que podemos chamar de casa, até planetas gêmeos orbitando entre si e com uma torrente de areia que vai de um planeta ao outro.
 
