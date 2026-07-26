@@ -263,7 +263,7 @@ plugins:
       subdir: plugin
     enabled: true
     options:
-      theme: default
+      theme: flexoki
   - source: github:quartz-community/obsidian-plugin-excalidraw
     enabled: true
     options:
