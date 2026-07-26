@@ -5,7 +5,7 @@ author:
   - "[[Me]]"
 url:
 created: 2026-05-26
-published:
+published: 2026-05-26
 topics:
   - "[[AI]]"
   - "[[Autoconhecimento]]"
@@ -13,6 +13,7 @@ status:
   - "[[In Progress]]"
 tags:
   - 0🌲
+permalink: nao-delegar-autoconhecimento
 ---
 
 Somente nós sabemos como gostamos das coisas, como fazemos as coisas, como nossa mente e nosso cérebro funciona. Exercitar o autoconhecimento é como exercitar qualquer músculo do nosso corpo: exige esforço e é desconfortável de início, mas no longo prazo o resultado é visível.

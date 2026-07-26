@@ -1,11 +1,14 @@
 ---
-title: 
-description: 
+title:
+description:
 draft: true
-permalink: 
-date: {{date}}
+publish: false
+permalink:
+created: {{date}}
+published:
 tags:
 aliases:
+image:
 quartzProperties: true
 quartzPropertiesCollapse: true
 enableToc: false
