@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Nano's Corner
+  pageTitle: canto do nano
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -28,7 +28,8 @@ configuration:
         dark: "#2b2b2b"
         secondary: "#284b63"
         tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
+        # highlight: rgba(143, 159, 169, 0)
+        highlight: #00000000
         textHighlight: "#fff23688"
       darkMode:
         light: "#161618"
@@ -38,8 +39,10 @@ configuration:
         dark: "#ebebec"
         secondary: "#7b97aa"
         tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        # highlight: rgba(143, 159, 169, 0)
+        highlight: #00000000
+        # textHighlight: "#b3aa0288"
+        textHighlight: "#00000000"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true

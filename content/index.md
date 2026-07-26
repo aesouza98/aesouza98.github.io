@@ -10,19 +10,10 @@ aliases:
   - home
   - índice
 date: 2026-06-13
-quartzProperties: true
+quartzProperties: false
 quartzPropertiesCollapse: true
 enableToc: true
 ---
 
-## página teste
-
-Bem vindo ao meu cantinho - sinta-se livre para explorar por aí
-
----
-> [!IMPORTANT] Isso é um teste
-> Ainda não tem nada real aqui
-
----
-
-[[Sobre Mim]]
+## Mapa de Conteúdos
+- [[Sobre Mim]]
