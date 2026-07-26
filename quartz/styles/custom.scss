@@ -13,3 +13,22 @@
 :root body a.external-link {
   background-color: transparent;
 }
+
+// Explorer colapsado: o plugin usa `min-height: 1.2rem` + `flex: 0 1 1.2rem` com
+// `overflow-y: hidden`, o que corta os descendentes do título (o "p" de "Explorador"/"Explorer").
+// Fixamos o line-height do título e damos folga à caixa colapsada, para não depender
+// do line-height que o tema aplica. Restrito ao desktop: abaixo de 800px o plugin
+// usa `flex: 0 0 34px` e o título vira botão de menu.
+@media all and (min-width: 801px) {
+  :root button.desktop-explorer h2 {
+    line-height: 1.4rem;
+  }
+
+  :root .explorer {
+    min-height: 1.5rem;
+  }
+
+  :root .explorer.collapsed {
+    flex-basis: 1.5rem;
+  }
+}
