@@ -14,21 +14,38 @@
   background-color: transparent;
 }
 
-// Explorer colapsado: o plugin usa `min-height: 1.2rem` + `flex: 0 1 1.2rem` com
-// `overflow-y: hidden`, o que corta os descendentes do título (o "p" de "Explorador"/"Explorer").
-// Fixamos o line-height do título e damos folga à caixa colapsada, para não depender
-// do line-height que o tema aplica. Restrito ao desktop: abaixo de 800px o plugin
-// usa `flex: 0 0 34px` e o título vira botão de menu.
+// Explorer e sumário colapsados: os plugins dimensionam a caixa com uma altura fixa
+// (`flex: 0 1 1.2rem` / `1.4rem`) e escondem o conteúdo com `overflow-y: hidden`.
+// Se o line-height do título passa dessa altura -- o que acontece com o tema Flexoki --
+// o texto é cortado. Em vez de calibrar rem na mão, escondemos o conteúdo colapsado
+// com `display: none` e deixamos a caixa dimensionar pelo próprio título.
+
+// Restrito ao desktop: abaixo de 800px o Explorer vira botão de menu com layout próprio.
 @media all and (min-width: 801px) {
-  :root button.desktop-explorer h2 {
-    line-height: 1.4rem;
-  }
-
-  :root .explorer {
-    min-height: 1.5rem;
-  }
-
   :root .explorer.collapsed {
-    flex-basis: 1.5rem;
+    flex: 0 0 auto;
+    overflow-y: visible;
   }
+
+  :root .explorer.collapsed > .explorer-content {
+    display: none;
+  }
+}
+
+// Sem media query, porque o plugin do sumário também não usa nenhuma.
+:root .toc:has(button.toc-header.collapsed) {
+  flex: 0 0 auto;
+  overflow-y: visible;
+}
+
+:root .toc .toc-content.collapsed {
+  display: none;
+}
+
+// O plugin dá `margin: 0.5rem 0` à lista do sumário. Somado ao botão do título
+// (que tem 24px por causa do ícone) e ao line-height de 1.6rem dos itens, isso abre
+// um vão do tamanho de uma linha entre "Sumário" e o primeiro item. Ajuste para 0.25rem
+// (ou 0) se ainda quiser mais próximo.
+:root .toc ul.toc-content {
+  margin-top: 0rem;
 }
